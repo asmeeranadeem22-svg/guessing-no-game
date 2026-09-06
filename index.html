@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number Game</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: rgb(116, 80, 71);
+
+    }
+    h1{
+        color:rgb(12, 0, 0);
+        margin-top: 50px;
+
+
+    }
+    #message{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    #guess-input{
+        width: 200px;
+        height: 30px;
+
+
+
+    }
+</style>
+<body>
+    <div class ="container">
+    <h1>Guess Number Game</h1>
+    <p>Try to guess the number between 1 and 100.</p>
+    <p>You have 10 attempts!</p>
+    <br>
+    <div class="game-container">
+        <h3>Guess a number between 1 and 100:</h3>
+        <input type="number" id="guess-input" min="1" max="100"><br><br>
+        <button id="submit-guess">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+    <div class="attempts-container">
+        <p>Attempts left: 
+        <span id="attempts-left">10</span>
+        </p>
+        </div>
+        <script src="guess-no-game.js"></script>
+</body>
+</html>
